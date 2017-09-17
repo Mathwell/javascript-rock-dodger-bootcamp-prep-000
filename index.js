@@ -24,7 +24,8 @@ var gameInterval = null
    var allRocks=document.getElementsByClassName("rock")
 
    for (var i=0; i<allRocks.length; i++){
-     allRocks[i].remove()
+     var currentRock=allRocks[i]
+     currentRock.remove()
    }
    console.log(allRocks.length)
   //console.log(ROCKS.length)
