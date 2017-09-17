@@ -152,6 +152,16 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+   if (e.which===LEFT_ARROW) {
+     moveDodgerLeft()
+     return
+   }
+
+   if (e.which===RIGHT_ARROW){
+     moveDodgerRight()
+     return
+   }
+   return
 }
 
 function moveDodgerLeft() {
