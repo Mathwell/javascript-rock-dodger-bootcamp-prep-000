@@ -86,7 +86,16 @@ function createRock(x) {
        return
      }else{
 
-
+            
+        function step() {
+          rock.style.top = `${top += 2}px`
+       
+          if (top < GAME_HEIGHT) {
+            window.requestAnimationFrame(step)
+          }
+        }
+       
+        window.requestAnimationFrame(step)
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
