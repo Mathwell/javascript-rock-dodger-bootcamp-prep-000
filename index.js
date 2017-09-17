@@ -49,7 +49,7 @@ function checkCollision(rock) {
                *    and the rock's right edge is > the DODGER's right edge
                */) {
       return true
-    } else {false}
+    } else {return false}
   }
 }
 
