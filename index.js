@@ -112,7 +112,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   i1=0
-  while (ROCKS.length>0 or i1<1000){
+  while (ROCKS.length>0 || i1<1000){
     i1++
     ROCKS.pop()
   }
