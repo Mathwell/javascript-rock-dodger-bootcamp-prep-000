@@ -111,6 +111,11 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
+  i=0
+  while (ROCKS.length>0 or i<1000){
+    i++
+    ROCKS.pop()
+  }
 }
 
 function moveDodger(e) {
