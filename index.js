@@ -129,10 +129,11 @@ function endGame() {
   window.removeEventListener("keydown", moveDodger)
   i1=0
   var currentRock=document.getElementsByClassName("rock")
+  console.log(currentRock.length)
   for (var i=0; i<currentRock.length; i++){
     document.removeChild(currentRock[i])
   }
-
+ console.log(ROCKS)
   while (ROCKS.length>0){
       ROCKS.pop()
   }
