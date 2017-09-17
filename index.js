@@ -133,11 +133,11 @@ function endGame() {
   for (var i=0; i<currentRock.length; i++){
     document.removeChild(currentRock[i])
   }
-  
+
   while (ROCKS.length>0){
       ROCKS.pop()
   }
-  
+
   alert("You lose!")
 }
 
