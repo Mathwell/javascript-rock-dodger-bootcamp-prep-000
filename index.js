@@ -95,7 +95,7 @@ function createRock(x) {
           }
         }
 
-        
+
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
