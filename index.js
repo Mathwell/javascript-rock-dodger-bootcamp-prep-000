@@ -22,7 +22,7 @@ var gameInterval = null
    window.removeEventListener("keydown", moveDodger)
 
    var allRocks=document.getElementsByClassName("rock")
-   
+
    for (var i=0; i<allRocks.length; i++){
      allRocks[i].remove()
    }
