@@ -22,10 +22,11 @@ var gameInterval = null
    window.removeEventListener("keydown", moveDodger)
 
    var allRocks=document.getElementsByClassName("rock")
-   console.log(allRocks.length)
+   
    for (var i=0; i<allRocks.length; i++){
      allRocks[i].remove()
    }
+   console.log(allRocks.length)
   //console.log(ROCKS.length)
    while (ROCKS.length>0){
        ROCKS.pop()
