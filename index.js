@@ -18,7 +18,7 @@ var gameInterval = null
  */
 
  function endGame() {
-   gameInterval=null
+   clearInterval(gameInterval)
    window.removeEventListener("keydown", moveDodger)
 
    var allRocks=document.getElementsByClassName("rock")
