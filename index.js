@@ -111,6 +111,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
+  document.removeEventListener("keydown", moveDodger)
   i1=0
   while (ROCKS.length>0 || i1<1000){
     i1++
