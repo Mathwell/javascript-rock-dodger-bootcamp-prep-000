@@ -17,6 +17,25 @@ var gameInterval = null
  * but all of your work should happen below.
  */
 
+ function endGame() {
+   gameInterval=null
+   window.removeEventListener("keydown", moveDodger)
+
+   var allRocks=document.getElementsByClassName("rock")
+   console.log(allRock.length)
+   for (var i=0; i<allRocks.length; i++){
+     document.removeChild(allRocks[i])
+   }
+  console.log(ROCKS.length)
+   while (ROCKS.length>0){
+       ROCKS.pop()
+   }
+
+   alert("You lose!")
+ }
+
+
+
 function checkCollision(rock) {
   // implement me!
   // use the comments below to guide you!
@@ -124,22 +143,7 @@ function createRock(x) {
  * and removing the `moveDodger` event listener.
  * Finally, alert "YOU LOSE!" to the player.
  */
-function endGame() {
-  gameInterval=null
-  window.removeEventListener("keydown", moveDodger)
-
-  var allRocks=document.getElementsByClassName("rock")
-  console.log(allRock.length)
-  for (var i=0; i<allRocks.length; i++){
-    document.removeChild(allRocks[i])
-  }
- console.log(ROCKS.length)
-  while (ROCKS.length>0){
-      ROCKS.pop()
-  }
-
-  alert("You lose!")
-}
+ 
 
 function moveDodger(e) {
   // implement me!
