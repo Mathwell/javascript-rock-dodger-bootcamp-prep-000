@@ -21,12 +21,12 @@ var gameInterval = null
    clearInterval(gameInterval)
    window.removeEventListener("keydown", moveDodger)
 
-   //var allRocks=document.getElementsByClassName("rock")
-   //console.log(allRocks.length)
-   //for (var i=0; i<allRocks.length; i++){
-    // document.removeChild(allRocks[i])
-   //}
-  console.log(ROCKS.length)
+   var allRocks=window.getElementsByClassName("rock")
+   console.log(allRocks.length)
+   for (var i=0; i<allRocks.length; i++){
+     window.removeChild(allRocks[i])
+   }
+  //console.log(ROCKS.length)
    while (ROCKS.length>0){
        ROCKS.pop()
    }
