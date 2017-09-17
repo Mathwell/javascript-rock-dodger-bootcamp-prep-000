@@ -143,7 +143,7 @@ function createRock(x) {
  * and removing the `moveDodger` event listener.
  * Finally, alert "YOU LOSE!" to the player.
  */
- 
+
 
 function moveDodger(e) {
   // implement me!
