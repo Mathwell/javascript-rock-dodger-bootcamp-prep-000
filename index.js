@@ -129,7 +129,7 @@ function endGame() {
   clearInterval(gameInterval)
   window.removeEventListener("keydown", moveDodger)
   i1=0
-  var currentRock=getElementsByClass("rock")
+  var currentRock=document.getElementsByClass("rock")
   for (var i=0; i<currentRock.length; i++){
     document.removeChild(currentRock[i])
   }
