@@ -27,10 +27,11 @@ var gameInterval = null
      var currentRock=allRocks[i]
      currentRock.remove()
    }
-   console.log(allRocks.length)
+   //console.log(allRocks.length)
   //console.log(ROCKS.length)
    while (ROCKS.length>0){
-       ROCKS.pop()
+       var currentRock=ROCKS.pop()
+       currentRock.remove()
    }
 
    alert("You lose!")
