@@ -101,17 +101,19 @@ function createRock(x) {
                   */
                     if (checkCollision(rock)) {
                         endGame()
-                          return
+                        return
                       } else {
 
-
+                          
                         function step() {
                           rock.style.top = `${top += 2}px`
                               if (top < GAME_HEIGHT) {
                                 window.requestAnimationFrame(step)
+                              } else{
+                                document.remove(this)
                               }
                             }
-                            window.requestAnimationFrame(step)
+                        window.requestAnimationFrame(step)
 
 
     /**
