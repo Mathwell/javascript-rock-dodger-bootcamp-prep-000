@@ -21,7 +21,7 @@ var gameInterval = null
    clearInterval(gameInterval)
    window.removeEventListener("keydown", moveDodger)
 
-   
+
    while (ROCKS.length>0){
        var currentRock=ROCKS.pop()
        currentRock.remove()
