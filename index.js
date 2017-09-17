@@ -104,7 +104,7 @@ function createRock(x) {
                         return
                       } else {
 
-                          
+
                         function step() {
                           rock.style.top = `${top += 2}px`
                               if (top < GAME_HEIGHT) {
